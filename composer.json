@@ -1,0 +1,21 @@
+{
+    "name": "bankiru/yii-logstash",
+    "description": "Yii log routes for logging to Logstash",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Boris Gorbylev",
+            "email": "gorbylev@banki.ru"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.0",
+        "ekho/lumberjack-php": "~0.1",
+        "yiisoft/yii": "~1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bankiru\\Yii\\Logging\\Logstash\\": "src/"
+        }
+    }
+}
