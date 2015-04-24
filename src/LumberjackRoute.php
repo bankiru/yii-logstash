@@ -44,7 +44,7 @@ class LumberjackRoute extends \CLogRoute
         $formatterOptions = [];
         if (array_key_exists('formatter', $this->options)) {
             if (is_array($this->options['formatter'])) {
-                $formatterOptions = [];
+                $formatterOptions = $this->options['formatter'];
             }
             unset($this->options['formatter']);
         }

@@ -155,6 +155,8 @@ class LumberjackFormatter extends NormalizerFormatter
         }
         if (isset($record['level_name'])) {
             $message['level'] = $record['level_name'];
+        } elseif (isset($record['level'])) {
+            $message['level'] = $record['level'];
         }
         if ($this->applicationName) {
             $message['type'] = $this->applicationName;
