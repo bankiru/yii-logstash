@@ -109,10 +109,10 @@ class LumberjackRoute extends \CLogRoute
     {
         foreach($logs as $log) {
             yield $this->formatter->format([
-                'level'     => $log[0],
-                'category'  => $log[1],
-                'timestamp' => $log[2],
-                'message'   => $log[3],
+                'level'     => $log[1],
+                'category'  => $log[2],
+                'timestamp' => $log[3],
+                'message'   => $log[0],
             ]);
         }
     }
