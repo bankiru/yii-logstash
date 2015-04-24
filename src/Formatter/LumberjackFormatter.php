@@ -106,9 +106,9 @@ class LumberjackFormatter extends NormalizerFormatter
         if (isset($record['message'])) {
             $message['@message'] = $record['message'];
         }
-        if (isset($record['channel'])) {
-            $message['@tags'] = array($record['channel']);
-            $message['@fields']['channel'] = $record['channel'];
+        if (isset($record['category'])) {
+            $message['@tags'] = array($record['category']);
+            $message['@fields']['category'] = $record['category'];
         }
         if (isset($record['level'])) {
             $message['@fields']['level'] = $record['level'];
@@ -149,9 +149,8 @@ class LumberjackFormatter extends NormalizerFormatter
         if (isset($record['message'])) {
             $message['message'] = $record['message'];
         }
-        if (isset($record['channel'])) {
-            $message['type'] = $record['channel'];
-            $message['channel'] = $record['channel'];
+        if (isset($record['category'])) {
+            $message['category'] = $record['category'];
         }
         if (isset($record['level_name'])) {
             $message['level'] = $record['level_name'];
