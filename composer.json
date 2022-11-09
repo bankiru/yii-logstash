@@ -17,5 +17,6 @@
         "psr-4": {
             "Bankiru\\Yii\\Logging\\Logstash\\": "src/"
         }
-    }
+    },
+    "abandoned": true
 }
